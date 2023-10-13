@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cough Detector App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/brands.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/solid.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div id="main-container">
+            <div class="header">
+                <span class="header-text">Cough Detector App - COMPSCI 689</span>
+            </div>
+            <h1 id="main-heading">Cough Detector App <i class="fa-solid fa-head-side-cough"></i></h1>
+            <span class="subtitle">Record an audio clip to detect the presence of coughing.</span>
+            <button id="toggle-record" onclick="toggleRecording()">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <p id="recording-status">Awaiting first audio input...</p>
+            <div class="footer">
+                <span class="footer-text">Made with <i class="fa-solid fa-heart"></i> by Aditya Vikram Singh</span>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
