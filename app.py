@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, Response
 from predict import CoughPredictor
-import json
 
 app = Flask(__name__)
 
